@@ -22,7 +22,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 
 FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(
-    PropTypes.exact({
+    PropTypes.shape({
       option: PropTypes.number.isRequired,
     })
   ),
